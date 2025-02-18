@@ -1,6 +1,4 @@
 'use client';
-
-import Bbg from '@/component/Bbg';
 import Contact from '@/component/Contact';
 import Head from '@/component/Head';
 import { motion } from 'framer-motion';
@@ -156,24 +154,6 @@ export default function page() {
                     </ul>
                 </div>
 
-                {/* <section className='about_intro'>
-                    <motion.p
-                        initial={{ opacity: 0, z: '40px' }}
-                        animate={{ opacity: 1, z: '0' }}
-                        transition={{ duration: 2.7, delay: 0.3 }}
-                    >MUGENは、Webデザイン制作会社になります</motion.p>
-                    <motion.p
-                        initial={{ opacity: 0, z: '40px' }}
-                        animate={{ opacity: 1, z: '0' }}
-                        transition={{ duration: 2.7, delay: 0.3 }}
-                    >生産性のあるサイト制作を心掛けております
-                    </motion.p>
-                    <motion.p
-                        initial={{ opacity: 0, z: '40px' }}
-                        animate={{ opacity: 1, z: '0' }}
-                        transition={{ duration: 2.7, delay: 0.3 }}
-                    >求められたニーズにお応えできるようにサポート致します</motion.p>
-                </section> */}
             </section>
             <Contact />
         </div>

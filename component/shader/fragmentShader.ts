@@ -15,7 +15,7 @@ const fragmentShader = `
     // 流体の拡散エフェクト
     vec2 fluid(vec2 uv, vec2 mouse) {
         vec2 flow = vec2(
-            sin(uTime * 0.5 + uv.x * 10.0),
+            sin(uTime * 1.5 + uv.x * 16.0),
             cos(uTime * 0.5 - uv.x * 4.0)
         );
 
@@ -29,8 +29,8 @@ const fragmentShader = `
     vec3 palette(float t) {
         return mix(
             vec3(0.03, 0.02, 0.0), // 青
-            vec3(0.9, 1.1, 1.0), // 赤
-            smoothstep(0.2, 0.68, t)
+            vec3(0.1, 0.8, 1.9), // 赤
+            smoothstep(0.2, 1.8, t)
         );
     }
 

@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #323E5F;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  /* background: var(--background); */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.relative {
+  position: unset;
+}
+
+a {
+  text-decoration: unset;
+  color: #eee9e9;
+}
+
+li {
+  list-style: none;
+  font-family: serif;
+}
+
+a.text-white.text-2xl.hover\:underline {
+  font-size: 12rem;
+}
+
+p {
+  font-family: Yu Gothic Medium,
+    \6e38\30b4\30b7\30c3\30af Medium,
+    YuGothic,
+    \6e38\30b4\30b7\30c3\30af\4f53,
+    Hiragino Kaku Gothic ProN,
+    Hiragino Sans,
+    \30e1\30a4\30ea\30aa,
+    sans-serif;
+  font-weight: 100;
+}
+
+li.about_a_1 {
+  padding-bottom: 1rem;
+  font-family: Yu Gothic Medium,
+    \6e38\30b4\30b7\30c3\30af Medium,
+    YuGothic,
+    \6e38\30b4\30b7\30c3\30af\4f53,
+    Hiragino Kaku Gothic ProN,
+    Hiragino Sans,
+    \30e1\30a4\30ea\30aa,
+    sans-serif;
+  font-weight: 100;
+  font-size: 0.89rem;
+}
+
+section.about_intro {
+  font-size: 1.1rem;
+}
+
+.bg {
+  position: fixed;
+  z-index: -1;
+}
+
+button {
+  /* border: 3px solid; */
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  transition: transform .50s, background-color .3s;
+  animation: 6.22s linear infinite rotateBorder;
+  position: fixed;
+  z-index: 2;
+  right: 4%;
+  top: 4%;
+  font-size: 31px;
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+    border-color: #fff;
+    /* 初期位置 */
+  }
+
+  100% {
+    transform: rotate(360deg);
+    border-color: #333;
+    /* 完全に回転 */
+  }
+}
+
+button:hover {
+  transform: scale(0.5);
+  /* ホバー時に膨らむ */
+  /* background-color: #fff; */
+  /* 青色に変わる */
+}
+
+
+
+.menu-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  background-color: #1a1c1f;
+  left: 0;
+  top: 0;
+}
+
+.menu-bg.absolute.top-0.left-0.w-full.h-full.bg-gray-800.flex.items-center.justify-center canvas {
+  position: absolute;
+  z-index: -1;
+  width: 100vw !important;
+  height: 100vh !important;
+}

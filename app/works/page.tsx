@@ -5,7 +5,7 @@ import Head from "@/component/Head";
 import Projects from "@/component/Projects";
 import { useState } from 'react'
 
-export default function page() {
+export default function Page() {
 
     const [activeMenu, setActiveMenu] = useState<number | null>(null);
 

@@ -1,3 +1,5 @@
+const i: number | null = null; // 初期値としてnullを設定する場合、型はnumberまたはnull。
+
 export const perspective = {
     initial: {
         opacity: 0,
@@ -5,7 +7,7 @@ export const perspective = {
         translateY: 80,
         translateX: -20,
     },
-    enter: (i) => ({
+    enter: (i: number) => ({ // 'i'の型を明示的に指定
         opacity: 1,
         rotateX: 0,
         translateY: 0,
@@ -21,14 +23,14 @@ export const perspective = {
         opacity: 0,
         transition: { duration: 0.5, type: "linear", ease: [0.76, 0, 0.24, 1] }
     }
-}
+};
 
 export const slideIn = {
     initial: {
         opacity: 0,
         y: 20
     },
-    enter: (i) => ({
+    enter: (i: number) => ({ // 'i'の型を明示的に指定
         opacity: 1,
         y: 0,
         transition: {
@@ -41,4 +43,4 @@ export const slideIn = {
         opacity: 0,
         transition: { duration: 0.5, type: "tween", ease: "easeInOut" }
     }
-}
+};

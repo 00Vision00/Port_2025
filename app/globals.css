@@ -21,7 +21,8 @@ body {
 }
 
 .relative {
-  position: unset;
+  position: relative;
+  z-index: 20;
 }
 
 a {
@@ -126,3 +127,47 @@ button:hover {
   width: 100vw !important;
   height: 100vh !important;
 }
+
+nav.flexed {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/*base*/
+
+li.text-\[4vw\].p-5.border-t {
+  font-size: 0.95vw;
+  padding: 1.5rem;
+  border: 1px solid #103f7782;
+  border-bottom: unset;
+  list-style: none;
+  width: 50%;
+}
+
+.relative.mix-blend-difference.z-10.text-white.h-screen.w-full {
+  position: relative;
+  mix-blend-mode: difference;
+  z-index: 10;
+  color: #fff;
+  width: 100%;
+}
+
+.fixed.top-0.h-screen.w-full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+ul.border-b {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*button_css*/

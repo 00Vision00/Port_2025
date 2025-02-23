@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion';
-import Contact from "@/component/Contact";
 import Head from "@/component/Head";
 
 export default function Home() {
@@ -27,7 +26,6 @@ export default function Home() {
             </motion.span>
           ))}
         </div>
-        <Contact />
       </main>
     </div>
   );

@@ -1,0 +1,38 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 40px 50px;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 30;
+    background-color: rgba(252, 252, 252, 0.894);
+
+    .body {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        .linkContainer {
+            perspective: 120px;
+            perspective-origin: bottom;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(27, 54, 75);
+            font-size: 46px;
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            width: 50%;
+            margin-top: 5px;
+        }
+    }
+}

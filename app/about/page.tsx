@@ -1,5 +1,4 @@
 'use client';
-import Contact from '@/component/Contact';
 import Head from '@/component/Head';
 import { motion } from 'framer-motion';
 
@@ -155,7 +154,6 @@ export default function page() {
                 </div>
 
             </section>
-            <Contact />
         </div>
     );
 }

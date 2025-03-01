@@ -10,11 +10,11 @@ export const projects = [
         src: "/Fluids.jpeg"
     },
     {
-        title: "Inka and Niclas",
+        title: "dev_01(自主制作)",
         src: "/window.avif"
     },
     {
-        title: "Arch McLeish",
+        title: "dev_02(自主制作)",
         src: "/Fluids.jpeg"
     },
     {
@@ -56,5 +56,29 @@ export const projects = [
     {
         title: 'Hello Worldm',
         src: '/Fluids.jpeg'
-    }
+    },
+    {
+        title: 'Hello Worldkk',
+        src: '/Fluids.jpeg'
+    },
+    {
+        title: 'Hello Worldq',
+        src: '/Fluids.jpeg'
+    },
+    {
+        title: 'Hello Worldyu',
+        src: '/Fluids.jpeg'
+    },
+    {
+        title: 'Hello World12',
+        src: '/Fluids.jpeg'
+    },
+    {
+        title: 'Hello Worl',
+        src: '/Fluids.jpeg'
+    },
+    {
+        title: 'Hello Worol',
+        src: '/Fluids.jpeg'
+    },
 ]

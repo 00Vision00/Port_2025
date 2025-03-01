@@ -1,8 +1,8 @@
 'use client'
 
-import Base from "@/component/Base";
+import Base from "@/component/Hover/Base";
 import Head from "@/component/Head";
-import Projects from "@/component/Projects";
+import Projects from "@/component/Hover/Projects";
 import { useState } from 'react'
 
 export default function Page() {

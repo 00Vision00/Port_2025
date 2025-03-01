@@ -28,8 +28,8 @@ const fragmentShader = `
     // カラーパレット関数
     vec3 palette(float t) {
         return mix(
-            vec3(0.03, 0.02, 0.0), // 青
-            vec3(0.1, 0.8, 1.9), // 赤
+            vec3(0.1, 0.1, 0.0), // 青
+            vec3(0.1, 0.2, 1.0), // 赤
             smoothstep(0.2, 1.8, t)
         );
     }

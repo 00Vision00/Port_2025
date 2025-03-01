@@ -72,7 +72,7 @@ interface PhraseProps {
 const Phrase: React.FC<PhraseProps> = ({ src }) => {
     return (
         <div className="px-5 flex gap-5 items-center">
-            <p className="text-[7.5vw] font-['Lilita_One']">Hello World</p> {/* 'Lilita One' フォントを指定 */}
+            <p className="text-[7.5vw] font-['Lilita_One']">React/Next.js</p> {/* 'Lilita One' フォントを指定 */}
             <p className="text-[7.5vw] font-['Lilita_One']">Front-End</p> {/* 'Lilita One' フォントを指定 */}
             <span className="relative h-[7.5vw] aspect-[4/2] rounded-full overflow-hidden">
                 <Image

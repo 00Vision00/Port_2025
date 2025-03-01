@@ -10,11 +10,11 @@ export const projects = [
         src: "/Fluids.jpeg"
     },
     {
-        title: "dev_01(自主制作)",
+        title: "dev_01",
         src: "/window.avif"
     },
     {
-        title: "dev_02(自主制作)",
+        title: "dev_02",
         src: "/Fluids.jpeg"
     },
     {
@@ -40,45 +40,5 @@ export const projects = [
     {
         title: 'Hello Worldt',
         src: '/Fluids.jpeg'
-    },
-    {
-        title: 'Hello Worldc',
-        src: '/Fluids.jpeg'
-    },
-    {
-        title: 'Hello Worlda',
-        src: '/Fluids.jpeg'
-    },
-    {
-        title: 'Hello Worldu',
-        src: '/Fluids.jpeg'
-    },
-    {
-        title: 'Hello Worldm',
-        src: '/Fluids.jpeg'
-    },
-    {
-        title: 'Hello Worldkk',
-        src: '/Fluids.jpeg'
-    },
-    {
-        title: 'Hello Worldq',
-        src: '/Fluids.jpeg'
-    },
-    {
-        title: 'Hello Worldyu',
-        src: '/Fluids.jpeg'
-    },
-    {
-        title: 'Hello World12',
-        src: '/Fluids.jpeg'
-    },
-    {
-        title: 'Hello Worl',
-        src: '/Fluids.jpeg'
-    },
-    {
-        title: 'Hello Worol',
-        src: '/Fluids.jpeg'
-    },
+    }
 ]

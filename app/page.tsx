@@ -46,12 +46,6 @@ export default function Home() {
         <Base activeMenu={activeMenu} />
         <Projects setActiveMenu={setActiveMenu} />
 
-        <Base activeMenu={activeMenu} />
-        <Projects setActiveMenu={setActiveMenu} />
-
-        <Base activeMenu={activeMenu} />
-        <Projects setActiveMenu={setActiveMenu} />
-
         <About />
       </main>
     </div>
@@ -79,7 +73,7 @@ const h1Wrapper: React.CSSProperties = {
 
 const letterStyle: React.CSSProperties = {
   textAlign: 'center',
-  fontSize: '20rem',
+  fontSize: '40vw',
   fontWeight: 'bold',
   margin: 0,
   lineHeight: 1,

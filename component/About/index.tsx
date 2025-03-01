@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 export default function index() {
 
-    const Text = ['Yamamoto Daisuke'];
+    const Text = ['?? Who I Am ??'];
 
     return (
         <div>
@@ -18,6 +18,8 @@ export default function index() {
                     </motion.p>
                 ))}
             </h2>
+
+            <h3></h3>
         </div>
     );
 }

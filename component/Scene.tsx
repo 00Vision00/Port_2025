@@ -1,7 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from "react";
-import Figure from './Figure';
+import { useEffect, useRef, useState } from "react";;
 import Wind from './Wind';
 import * as THREE from "three";
 
@@ -74,10 +73,6 @@ export default function Scene() {
 
     return (
         <>
-            <canvas ref={containerRef} id="stage" />
-            {isSceneReady && sceneRef.current && worldRef.current && (
-                <Figure scene={sceneRef.current} world={worldRef.current} />
-            )}
         </>
     );
 }

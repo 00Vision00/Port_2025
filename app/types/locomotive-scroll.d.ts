@@ -8,9 +8,9 @@ declare module 'locomotive-scroll' {
             tablet?: { smooth?: boolean };
         });
 
-        on(event: string, callback: (args?: any) => void): void;
+        on(event: 'scroll' | 'call' | 'tick', callback: (args?: { scroll: { x: number; y: number } }) => void): void;
         update(): void;
         destroy(): void;
-        scrollTo(target: string | number | HTMLElement, options?: any): void;
+        scrollTo(target: string | number | HTMLElement, options?: { offset?: number; duration?: number }): void;
     }
 }

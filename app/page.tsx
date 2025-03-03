@@ -6,6 +6,7 @@ import Projects from '@/component/Hover/Projects';
 import { useState } from 'react';
 import TextParalax from '@/component/TextParalax'
 import About from '@/component/About'
+import Mask from '@/component/Mask'
 
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
     <div>
       <main style={mainStyle}>
         {/* <Head /> */}
-        <div style={h1Wrapper}>
+        <div style={h1Wrapper} className='h1'>
           {letters.map((letter, index) => (
             <motion.p
               key={index}
@@ -33,6 +34,8 @@ export default function Home() {
           ))}
         </div>
 
+        <Mask />
+
         <motion.div
           initial={{ opacity: 0, y: '1px' }}
           animate={{ opacity: 1, y: '0px' }}
@@ -47,6 +50,9 @@ export default function Home() {
         <Projects setActiveMenu={setActiveMenu} />
 
         <About />
+
+        <Base activeMenu={activeMenu} />
+        <Projects setActiveMenu={setActiveMenu} />
       </main>
     </div>
   );
@@ -61,6 +67,7 @@ const mainStyle: React.CSSProperties = {
   margin: 0,
   padding: 0,
   flexDirection: 'column',
+  overflowX: 'hidden'
 };
 
 const h1Wrapper: React.CSSProperties = {
@@ -69,11 +76,13 @@ const h1Wrapper: React.CSSProperties = {
   fontFamily: "Lilita One",
   fontWeight: '400',
   fontStyle: 'normal',
+  marginBottom: '15vw',
+  marginTop: '5vw'
 };
 
 const letterStyle: React.CSSProperties = {
   textAlign: 'center',
-  fontSize: '40vw',
+  fontSize: '45vw',
   fontWeight: 'bold',
   margin: 0,
   lineHeight: 1,

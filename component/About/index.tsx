@@ -4,6 +4,9 @@ export default function index() {
 
     const Text = ['?? Who I Am ??'];
     const Name = ['Yamamoto Daisuke'];
+    const Skill = ['skill: React/Next.js/Vue.js/Git.Hub/vercel/Html/css'];
+    const enviroment = ['environment:Vscode'];
+    const Live = ['city: Kumamoto City'];
 
     return (
         <div>
@@ -32,6 +35,49 @@ export default function index() {
                     </motion.p>
                 ))}
             </div>
+
+            <div>
+                {Skill.map((title, index) => (
+                    <motion.p
+                        key={index}
+                        style={skillStyle}
+                        initial={{ opacity: 0, y: '10px' }}
+                        animate={{ opacity: 1, y: '0px' }}
+
+                    >
+                        {title}
+
+                    </motion.p>
+                ))}
+            </div>
+            <div>
+                {enviroment.map((title, index) => (
+                    <motion.p
+                        key={index}
+                        style={skillStyle}
+                        initial={{ opacity: 0, y: '10px' }}
+                        animate={{ opacity: 1, y: '0px' }}
+
+                    >
+                        {title}
+
+                    </motion.p>
+                ))}
+            </div>
+            <div>
+                {Live.map((title, index) => (
+                    <motion.p
+                        key={index}
+                        style={skillStyle}
+                        initial={{ opacity: 0, y: '10px' }}
+                        animate={{ opacity: 1, y: '0px' }}
+
+                    >
+                        {title}
+
+                    </motion.p>
+                ))}
+            </div>
         </div>
     );
 }
@@ -52,4 +98,13 @@ const nameStyle: React.CSSProperties = {
     fontWeight: '400',
     fontStyle: 'normal',
     fontSize: '10vw'
+}
+
+const skillStyle: React.CSSProperties = {
+    display: 'flex',
+    gap: '0.2em', // 文字間のスペース
+    fontFamily: "Lilita One",
+    fontWeight: '400',
+    fontStyle: 'normal',
+    fontSize: '4vw'
 }

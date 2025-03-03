@@ -21,6 +21,7 @@ body {
   /* background: var(--background); */
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--backgound01);
+  height: 100vh;
 }
 
 .relative {
@@ -228,4 +229,7 @@ p.text-\[7\.5vw\] {
 main.overflow-hidden {
   width: 100vw;
   overflow: hidden;
+  margin-top: 12.5vw;
 }
+
+@media screen {}

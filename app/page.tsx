@@ -13,7 +13,7 @@ import Cursor from '@/component/Cursor'
 export default function Home() {
   const letters = ['S', 'E', 'I', 'K', 'E', 'I', '.co'];
   const [activeMenu, setActiveMenu] = useState<number | null>(null)
-  const [isActive, setIsActive] = useState(false);
+  const [isActive] = useState(false);
 
 
   return (

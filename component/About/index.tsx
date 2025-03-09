@@ -3,10 +3,11 @@ import { motion } from 'framer-motion'
 export default function index() {
 
     const Text = ['?? Who I Am ??'];
-    const Name = ['Yamamoto Daisuke'];
-    const Skill = ['skill: React/Next.js/Vue.js/Git.Hub/vercel/Html/css'];
-    const enviroment = ['environment:Vscode'];
-    const Live = ['city: Kumamoto City'];
+    const Name = ['name: Yamamoto Daisuke'];
+    const Skill = ['skill: React/Next.js/Vue.js/Three.js/Git.Hub/vercel'];
+    const enviroment = ['code:Vscode'];
+    const Live = ['city: Kumamoto'];
+    const camera = ['camera: panasonic_GH5_mark3'];
 
     return (
         <div>
@@ -78,6 +79,20 @@ export default function index() {
                     </motion.p>
                 ))}
             </div>
+            <div>
+                {camera.map((title, index) => (
+                    <motion.p
+                        key={index}
+                        style={skillStyle}
+                        initial={{ opacity: 0, y: '10px' }}
+                        animate={{ opacity: 1, y: '0px' }}
+
+                    >
+                        {title}
+
+                    </motion.p>
+                ))}
+            </div>
         </div>
     );
 }
@@ -97,7 +112,7 @@ const nameStyle: React.CSSProperties = {
     fontFamily: "Lilita One",
     fontWeight: '400',
     fontStyle: 'normal',
-    fontSize: '10vw'
+    fontSize: '4vw'
 }
 
 const skillStyle: React.CSSProperties = {

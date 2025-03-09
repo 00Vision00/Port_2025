@@ -7,14 +7,18 @@ import { useState } from 'react';
 import TextParalax from '@/component/TextParalax'
 import About from '@/component/About'
 import Mask from '@/component/Mask'
-
+import Contact from '@/component/Contact'
+import Cursor from '@/component/Cursor'
 
 export default function Home() {
-  const letters = ['2', '0', '2', '5'];
+  const letters = ['S', 'E', 'I', 'K', 'E', 'I', '.co'];
   const [activeMenu, setActiveMenu] = useState<number | null>(null)
+  const [isActive, setIsActive] = useState(false);
+
 
   return (
     <div>
+      <Cursor isActive={isActive} />
       <main style={mainStyle}>
         {/* <Head /> */}
         <div style={h1Wrapper} className='h1'>
@@ -33,9 +37,7 @@ export default function Home() {
             </motion.p>
           ))}
         </div>
-
         <Mask />
-
         <motion.div
           initial={{ opacity: 0, y: '1px' }}
           animate={{ opacity: 1, y: '0px' }}
@@ -48,11 +50,8 @@ export default function Home() {
         </motion.div>
         <Base activeMenu={activeMenu} />
         <Projects setActiveMenu={setActiveMenu} />
-
         <About />
-
-        <Base activeMenu={activeMenu} />
-        <Projects setActiveMenu={setActiveMenu} />
+        <Contact />
       </main>
     </div>
   );
@@ -63,7 +62,6 @@ const mainStyle: React.CSSProperties = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  // height: '100vh', // ビューポート全体の高さ
   margin: 0,
   padding: 0,
   flexDirection: 'column',
@@ -73,16 +71,17 @@ const mainStyle: React.CSSProperties = {
 const h1Wrapper: React.CSSProperties = {
   display: 'flex',
   gap: '0.2em', // 文字間のスペース
-  fontFamily: "Lilita One",
+  // fontFamily: "Lilita One",
   fontWeight: '400',
   fontStyle: 'normal',
-  marginBottom: '15vw',
-  marginTop: '5vw'
+  marginBottom: '5vw',
+  marginTop: '5vw',
+  width: '80%',
 };
 
 const letterStyle: React.CSSProperties = {
-  textAlign: 'center',
-  fontSize: '45vw',
+  textAlign: 'left',
+  fontSize: '2rem',
   fontWeight: 'bold',
   margin: 0,
   lineHeight: 1,

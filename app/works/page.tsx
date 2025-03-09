@@ -17,7 +17,7 @@ export default function Page() {
             {/* <Scene /> */}
             <Base activeMenu={activeMenu} />
             <Projects setActiveMenu={setActiveMenu} />
-
+            
         </div>
     );
 }

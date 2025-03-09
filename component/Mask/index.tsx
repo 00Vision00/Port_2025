@@ -5,9 +5,9 @@ import styles from "./pages.module.css"; // CSS モジュールのインポー�
 import { motion } from "framer-motion"; // framer-motion のアニメーション用コンポーネントをインポート
 import { useInView } from "react-intersection-observer"; // 要素がビューポート内に入ったかを検出するフック
 
-const phrase = ["初めましてやまもとだいすけと申します。"]; // 表示するテキストの配列
-const Secondphrase = ["普段webサイト制作を行っております。"]; // 表示するテキストの配列
-const Thrdphrase = ["Next.jsベースのSSRの特性を活かしたサイト制作が好きです。"]; // 表示するテキストの配列
+const phrase = ["当サイトをご覧頂き有難うございます"]; // 表示するテキストの配列
+const Secondphrase = ["webサイト制作を生業としてます / 3D・webGL(Three.js)を取り入れた内容で提供しております"]; // 表示するテキストの配列
+const Thrdphrase = ["インタラクティブなwebサイト・Next.jsベースのSSRの特性を活かしたサイト制作が好きです"]; // 表示するテキストの配列
 
 export default function Home() {
     return (

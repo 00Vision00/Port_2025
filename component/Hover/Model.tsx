@@ -6,8 +6,8 @@ import { animate, useMotionValue, useTransform } from 'framer-motion';
 import { vertex, fragment } from '../utils/shader';
 import { useTexture, useAspect } from '@react-three/drei';
 import { ShaderMaterialWithUniforms } from '../../app/types/types'; // 型をインポート
-import useMouse from '../UseMouse';
-import useDimension from '../UseDimention';
+import useMouse from './UseMouse';
+import useDimension from './UseDimention';
 import { projects } from '../utils/data';
 import { Mesh } from 'three';
 

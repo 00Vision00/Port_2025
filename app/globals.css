@@ -6,7 +6,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --backgound01: #dbcbb1;
+  --backgound01: #283037;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,7 +19,13 @@
 body {
   color: var(--foreground);
   /* background: var(--background); */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "游ゴシック体",
+    YuGothic,
+    "游ゴシック",
+    "Yu Gothic",
+    "NotoSansCJKjp",
+    "メイリオ",
+    sans-serif;
   background-color: var(--backgound01);
   height: 100vh;
 }
@@ -44,29 +50,34 @@ a.text-white.text-2xl.hover\:underline {
 }
 
 p {
-  font-family: Yu Gothic Medium,
+  /* font-family: Yu Gothic Medium,
     \6e38\30b4\30b7\30c3\30af Medium,
     YuGothic,
     \6e38\30b4\30b7\30c3\30af\4f53,
     Hiragino Kaku Gothic ProN,
     Hiragino Sans,
     \30e1\30a4\30ea\30aa,
-    sans-serif;
+    sans-serif; */
   font-weight: 100;
-  font-family: "Lilita One", sans-serif;
+  font-family: "游ゴシック体",
+    YuGothic,
+    "游ゴシック",
+    "Yu Gothic",
+    "NotoSansCJKjp",
+    "メイリオ",
+    sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 li.about_a_1 {
   padding-bottom: 1rem;
-  font-family: Yu Gothic Medium,
-    \6e38\30b4\30b7\30c3\30af Medium,
+  font-family: "游ゴシック体",
     YuGothic,
-    \6e38\30b4\30b7\30c3\30af\4f53,
-    Hiragino Kaku Gothic ProN,
-    Hiragino Sans,
-    \30e1\30a4\30ea\30aa,
+    "游ゴシック",
+    "Yu Gothic",
+    "NotoSansCJKjp",
+    "メイリオ",
     sans-serif;
   font-weight: 100;
   font-size: 0.89rem;
@@ -180,7 +191,7 @@ ul.border-b {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #ff572287;
+  /* background-color: #ff572287; */
 }
 
 /*button_css*/

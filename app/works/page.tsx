@@ -1,7 +1,6 @@
 'use client'
 
 import Base from "@/component/Hover/Base";
-import Head from "@/component/Head";
 import Projects from "@/component/Hover/Projects";
 import { useState } from 'react'
 
@@ -11,13 +10,10 @@ export default function Page() {
 
     return (
         <div>
-            <Head />
-            {/* <Button_index /> */}
-            {/* <Menu /> */}
-            {/* <Scene /> */}
+
             <Base activeMenu={activeMenu} />
             <Projects setActiveMenu={setActiveMenu} />
-            
+
         </div>
     );
 }

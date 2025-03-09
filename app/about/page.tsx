@@ -1,11 +1,10 @@
 'use client';
-import Head from '@/component/Head';
 import { motion } from 'framer-motion';
 
 export default function page() {
     return (
         <div>
-            <Head />
+
             <motion.h2 style={about_h2}
                 initial={{ opacity: 0, y: '30px' }}
                 animate={{ opacity: 1, y: '0px' }}

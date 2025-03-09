@@ -20,7 +20,6 @@ export default function Home() {
     <div>
       <Cursor isActive={isActive} />
       <main style={mainStyle}>
-        {/* <Head /> */}
         <div style={h1Wrapper} className='h1'>
           {letters.map((letter, index) => (
             <motion.p

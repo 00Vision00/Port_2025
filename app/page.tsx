@@ -8,17 +8,16 @@ import TextParalax from '@/component/TextParalax'
 import About from '@/component/About'
 import Mask from '@/component/Mask'
 import Contact from '@/component/Contact'
-import Cursor from '@/component/Cursor'
+import Intro from '@/component/Intro'
 
 export default function Home() {
   const letters = ['S', 'E', 'I', 'K', 'E', 'I', '.co'];
   const [activeMenu, setActiveMenu] = useState<number | null>(null)
-  const [isActive] = useState(false);
+
 
 
   return (
     <div>
-      <Cursor isActive={isActive} />
       <main style={mainStyle}>
         <div style={h1Wrapper} className='h1'>
           {letters.map((letter, index) => (
@@ -47,9 +46,11 @@ export default function Home() {
         >
           <TextParalax />
         </motion.div>
+        <h3>works</h3>
         <Base activeMenu={activeMenu} />
         <Projects setActiveMenu={setActiveMenu} />
         <About />
+        <Intro />
         <Contact />
       </main>
     </div>

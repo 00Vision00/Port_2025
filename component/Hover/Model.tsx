@@ -49,7 +49,7 @@ export default function Model({ activeMenu }: ModelProps) {
         } else if (plane.current) {
             const material = plane.current.material as ShaderMaterialWithUniforms; // 型を明示
             animate(opacity, 0, {
-                duration: 0.25,
+                duration: 0.55,
                 onUpdate: (latest: number) => {
                     material.uniforms.uAlpha.value = latest;
                 }

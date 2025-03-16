@@ -59,30 +59,27 @@ export default function Home({ isActive }: { isActive: boolean }) {
             gsap.to(circle.current, {
                 width: size,
                 height: size,
+                filter: `blur(${blur}px)`, // 文字列で指定
                 duration: 1.3,
-                ease: "power2.out",
-                onUpdate: () => {
-                    if (circle.current) {
-                        circle.current.style.filter = `blur(${blur}px)`;
-                    }
-                }
+                ease: "power2.out"
             });
         }
     }, [isActive]);
 
+
+
     return (
-        <div className="relative h-screen">
-            <div
-                ref={circle}
-                className="top-0 left-0 fixed rounded-full pointer-events-none"
-                style={{
-                    backgroundColor: '#BCE4F2',
-                    position: 'fixed',
-                    mixBlendMode: 'difference',
-                    willChange: 'filter, transform',
-                    borderRadius: '15px',
-                }}
-            />
-        </div>
+        <div
+            ref={circle}
+            className="top-0 left-0 fixed rounded-full pointer-events-none"
+            style={{
+                backgroundColor: '#BCE4F2',
+                position: 'fixed',
+                mixBlendMode: 'difference',
+                willChange: 'filter, transform', // filter を明示的に追加
+                borderRadius: '15px',
+            }}
+        />
+
     );
 }

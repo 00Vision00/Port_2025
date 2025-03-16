@@ -10,35 +10,19 @@ export const projects = [
         src: "/Fluids.jpeg"
     },
     {
-        title: "dev_01",
+        title: "Kyoto-uji",
         src: "/window.avif"
     },
     {
-        title: "dev_02",
+        title: "Shiga-aisyou",
         src: "/Fluids.jpeg"
     },
     {
-        title: "Nadir Bucan",
+        title: "Fukuoka-kasuya",
         src: "/window.avif"
     },
     {
-        title: "Chandler Bondurant",
+        title: "Nakamuraya",
         src: "/window.avif"
-    },
-    {
-        title: "Arianna Lago",
-        src: "/window.avif"
-    },
-    {
-        title: 'Hello Worlds',
-        src: '/Fluids.jpeg'
-    },
-    {
-        title: 'Hello Worlde',
-        src: '/Fluids.jpeg'
-    },
-    {
-        title: 'Hello Worldt',
-        src: '/Fluids.jpeg'
     }
 ]
